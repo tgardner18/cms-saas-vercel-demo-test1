@@ -16,7 +16,7 @@ export const Logo: FunctionComponent<LogoProps> = ({
     logo,
     theme_switcher: false,
   });
-  const myLogoUrl="https://app-ocstowens64o9lp001.cms.optimizely.com/ui/CMS/Content/globalassets/owens__minor.png";
+  const myLogoUrl="https://app-ocstowens64o9lp001.cms.optimizely.com/globalassets/owens__minor.png";
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
