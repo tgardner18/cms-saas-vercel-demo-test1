@@ -7,6 +7,7 @@ export default OnPageEdit.createEditPageComponent(setupFactory(), {
     loader: getContentById,
     clientFactory: createAuthorizedClient,
     // refreshTimeout: 1000  // Enable this line when you have issues with the preview not updating at all
+    refreshTimeout: 750  // Enable this line when you have issues with the preview not updating at all
 });
 
 export const dynamic = "force-dynamic";
