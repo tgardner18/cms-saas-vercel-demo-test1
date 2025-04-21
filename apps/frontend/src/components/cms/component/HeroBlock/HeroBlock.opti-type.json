@@ -59,7 +59,7 @@
       "type": "string",
       "format": "shortString",
       "displayName": "Sub heading",
-      "description": "The subheading for this block",
+      "description": "The subheading for block",
       "localized": true,
       "required": false,
       "group": "Information",
