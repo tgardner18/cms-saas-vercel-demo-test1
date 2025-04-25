@@ -22,6 +22,7 @@ const config: Config = {
       'independence': '#484F61',
       'mischka': '#CED2DC',
       'pale-sky': '#656C81',
+      'tenerity-blue': '#0077B5',
       'currentColor': 'currentColor',
       'transparent': 'transparent',
       'inherit': 'inherit'
