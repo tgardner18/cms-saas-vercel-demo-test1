@@ -18,12 +18,12 @@ export const Logo: FunctionComponent<LogoProps> = ({
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
-  const myLogoUrl="https://app-ocstyouversd32tmt001.cms.optimizely.com/globalassets/brand/logo-black-tenerity.png";
+  //const myLogoUrl="https://app-ocstyouversd32tmt001.cms.optimizely.com/globalassets/brand/logo-black-tenerity.png";
 
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={myLogoUrl}
+        src={logoUrl}
         alt="Tenerity Logo"
         fill
         unoptimized
