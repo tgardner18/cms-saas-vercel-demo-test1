@@ -18,7 +18,7 @@ export const Logo: FunctionComponent<LogoProps> = ({
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
-  const myLogoUrl="https://app-ocstbloombe71t9cp001.cms.optimizely.com/globalassets/brand/sammonsfinanciallogo.png";
+  const myLogoUrl="https://app-ocstsammons1y2z4p001.cms.optimizely.com/globalassets/brand/sammonsfinanciallogo.png";
 
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
