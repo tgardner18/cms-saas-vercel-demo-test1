@@ -17,12 +17,14 @@ export const Logo: FunctionComponent<LogoProps> = ({
   const defaultValue = useMemo(() => { return { logo, theme_switcher: false } }, [ logo ])
 
   // Get the logo configuration
-  const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
+  //const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
+  const myLogoUrl="https://app-ocstbloombe71t9cp001.cms.optimizely.com/globalassets/bloom-logo.png";
+
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
-        alt="Mosey Bank Logo"
+        src={myLogoUrl}
+        alt="Bloomberg Logo"
         fill
         unoptimized
         priority
