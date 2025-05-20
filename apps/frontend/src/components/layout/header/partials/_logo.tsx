@@ -18,11 +18,12 @@ export const Logo: FunctionComponent<LogoProps> = ({
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
+  const myLogoUrl="https://app-ocstpetri6ke53t001.cms.optimizely.com/globalassets/_brand/MARTA.png";
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
-        alt="Mosey Bank Logo"
+        src={myLogoUrl}
+        alt="Marta Logo"
         fill
         unoptimized
         priority
