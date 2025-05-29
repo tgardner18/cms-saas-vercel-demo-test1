@@ -18,16 +18,16 @@ export const Logo: FunctionComponent<LogoProps> = ({
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
-  const myLogoUrl="https://app-ocstpetri6ke53t001.cms.optimizely.com/globalassets/_brand/MARTA.png";
+  //const myLogoUrl="https://app-ocstpetri6ke53t001.cms.optimizely.com/globalassets/_brand/MARTA.png";
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={myLogoUrl}
-        alt="Marta Logo"
+        src={logoUrl}
+        alt="Site Logo"
         fill
         unoptimized
         priority
-        className="dark:brightness-0	dark:invert !w-auto !h-20 !relative"
+        className="dark:brightness-0	dark:invert !w-auto !h-12 !relative"
       />
     </Link>
   );
