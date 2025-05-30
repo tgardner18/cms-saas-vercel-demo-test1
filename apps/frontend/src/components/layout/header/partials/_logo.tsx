@@ -15,14 +15,16 @@ export const Logo: FunctionComponent<LogoProps> = ({
 }) => {
   // Create a stable default value that doesn't change every render
   const defaultValue = useMemo(() => { return { logo, theme_switcher: false } }, [ logo ])
+  // custom logo url
+  const myLogoUrl="https://app-ocstwipflir8j8sp001.cms.optimizely.com/globalassets/_brand/WipfliLogo.png";
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
-        alt="Mosey Bank Logo"
+        src={myLogoUrl}
+        alt="WipFli Logo"
         fill
         unoptimized
         priority

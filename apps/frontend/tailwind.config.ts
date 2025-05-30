@@ -11,9 +11,9 @@ const config: Config = {
     colors: {
       'white': '#ffffff',
       'ghost-white': '#F8F8FC',
-      'light-grey': '#D9D9D9',
-      'azure': '#007EFC',
-      'verdansk': '#6AF388',
+      'light-grey': '#C5C5C5',
+      'azure': '#0050FF',
+      'verdansk': '#6CC04A',
       'people-eater': '#9847FF',
       'paleruby': '#EB5A79',
       'tangy': '#FFAA47',
