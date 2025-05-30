@@ -1,6 +1,8 @@
 import 'server-only'
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+// custom google font
+import { Anton } from "next/font/google";
 import "./globals.scss";
 import { Body, ThemeProvider } from "@/components/theme"
 import Header from "@/components/layout/header";
@@ -20,6 +22,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 /* eslint-disable @next/next/no-css-tags */
 
 const figtree = Figtree({ subsets: ["latin"] });
+// variable for custom google font
+const anton = Anton({ subsets: ["latin"] }); 
 
 export async function generateMetadata(): Promise<Metadata> {
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN || process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'
@@ -84,7 +88,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         { enableDemoTools && <link key="dynamic-styles" rel="stylesheet" href="/main.css" ></link> }
       </head>
       <ThemeProvider value={{ theme: "system" }}>
-        <Body className={`${figtree.className} on-ghost-white overflow-x-hidden`}>
+        <Body className={`${anton.className} on-ghost-white overflow-x-hidden`}>
           <OptimizelyOneProvider value={{ debug: false }} >
             <PageActivator />
             <div className="flex min-h-screen flex-col justify-between">
