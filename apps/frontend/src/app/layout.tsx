@@ -21,6 +21,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const figtree = Figtree({ subsets: ["latin"] });
 
+// custom font 
+const barlow = Barlow({ subsets: ["latin"]});
+
 export async function generateMetadata(): Promise<Metadata> {
   const domain = process.env.NEXT_PUBLIC_SITE_DOMAIN || process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'
   const scheme = domain && (domain.startsWith("localhost") || domain.endsWith(".local")) ? 'http' : 'https'
@@ -28,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: base,
     title: {
-      default: `Mosey Bank - An Optimizely Demo Company`,
+      default: `TaylorMade - Golf`,
       template: `%s | Mosey Bank - An Optimizely Demo Company`,
     },
     openGraph: {
@@ -36,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
         default: `Mosey Bank - An Optimizely Demo Company`,
         template: `%s | Mosey Bank - An Optimizely Demo Company`,
       },
-      siteName: "Mosey Bank",
+      siteName: "TaylorMade",
       images: [
         {
           url: "/apple-touch-icon.png",
@@ -84,7 +87,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         { enableDemoTools && <link key="dynamic-styles" rel="stylesheet" href="/main.css" ></link> }
       </head>
       <ThemeProvider value={{ theme: "system" }}>
-        <Body className={`${figtree.className} on-ghost-white overflow-x-hidden`}>
+        <Body className={`${barlow.className} on-ghost-white overflow-x-hidden`}>
           <OptimizelyOneProvider value={{ debug: false }} >
             <PageActivator />
             <div className="flex min-h-screen flex-col justify-between">
