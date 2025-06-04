@@ -1,6 +1,7 @@
 import 'server-only'
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.scss";
 import { Body, ThemeProvider } from "@/components/theme"
 import Header from "@/components/layout/header";
@@ -32,12 +33,12 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: base,
     title: {
       default: `TaylorMade - Golf`,
-      template: `%s | Mosey Bank - An Optimizely Demo Company`,
+      template: `%s | Golf`,
     },
     openGraph: {
       title: {
-        default: `Mosey Bank - An Optimizely Demo Company`,
-        template: `%s | Mosey Bank - An Optimizely Demo Company`,
+        default: `TaylorMade - Golf`,
+        template: `%s | Golf`,
       },
       siteName: "TaylorMade",
       images: [
