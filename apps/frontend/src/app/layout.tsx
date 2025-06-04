@@ -86,7 +86,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         { enableDemoTools && <link key="dynamic-styles" rel="stylesheet" href="/main.css" ></link> }
       </head>
       <ThemeProvider value={{ theme: "system" }}>
-        <Body className={`${figree.className} on-ghost-white overflow-x-hidden`}>
+        <Body className={`${figtree.className} on-ghost-white overflow-x-hidden`}>
           <OptimizelyOneProvider value={{ debug: false }} >
             <PageActivator />
             <div className="flex min-h-screen flex-col justify-between">
