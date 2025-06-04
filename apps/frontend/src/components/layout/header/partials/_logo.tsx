@@ -18,11 +18,13 @@ export const Logo: FunctionComponent<LogoProps> = ({
 
   // Get the logo configuration
   const { logo: logoUrl } = useFlag("layout_configuration", defaultValue);
+  // replace with custom logo 
+  const myLogo = "https://app-ocstwipflir8j8st002.cms.optimizely.com/globalassets/_brand/header-logo-taylormade.svg"
   return (
     <Link href="/" className="flex items-center grow-0 shrink-0" {...divProps}>
       <Image
-        src={logoUrl}
-        alt="Mosey Bank Logo"
+        src={myLogo}
+        alt="TaylorMade Logo"
         fill
         unoptimized
         priority
