@@ -52,15 +52,15 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
             cmsFieldName="QuoteProfilePicture"
             src={ profileUrl.href }
             alt={name ?? ""}
-            width={300}
-            height={300}
-            className="rounded-full max-w-14 mr-4"
+            width={200}
+            height={200}
+            className="rounded-full mr-4"
             ctx={ ctx }
           />
         )}
 
         <cite className="lg:flex not-italic">
-          <CmsEditable as="p" cmsFieldName="QuoteProfileName" className="whitespace-nowrap" ctx={ ctx }>{name}</CmsEditable>
+          <CmsEditable as="p" cmsFieldName="QuoteProfileName" className="text-2xl font-bold whitespace-nowrap" ctx={ ctx }>{name}</CmsEditable>
           {location && <>
             <span className="mx-2 hidden lg:inline-block">&mdash;</span>
             <CmsEditable cmsFieldName="QuoteProfileLocation" className="text-lg mt-1" ctx={ ctx }>
