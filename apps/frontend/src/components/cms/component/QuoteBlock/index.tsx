@@ -38,7 +38,7 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
 
   return (
     <figure
-      className={`p-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-azure before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
+      className={`p-4 my-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-dark before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
         " "
       )}`}
     >
@@ -52,9 +52,9 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
             cmsFieldName="QuoteProfilePicture"
             src={ profileUrl.href }
             alt={name ?? ""}
-            width={200}
-            height={200}
-            className="rounded-full max-w-12 mr-4"
+            width={300}
+            height={300}
+            className="rounded-full max-w-14 mr-4"
             ctx={ ctx }
           />
         )}
@@ -63,7 +63,7 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
           <CmsEditable as="p" cmsFieldName="QuoteProfileName" className="whitespace-nowrap" ctx={ ctx }>{name}</CmsEditable>
           {location && <>
             <span className="mx-2 hidden lg:inline-block">&mdash;</span>
-            <CmsEditable cmsFieldName="QuoteProfileLocation" className="text-xs mt-1" ctx={ ctx }>
+            <CmsEditable cmsFieldName="QuoteProfileLocation" className="text-lg mt-1" ctx={ ctx }>
               {location}
             </CmsEditable>
           </>}
