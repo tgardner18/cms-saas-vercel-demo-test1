@@ -28,7 +28,7 @@ export async function SiteFooter({locale, ctx }: SiteFooterProps)
         return undefined
     }))?.appLayout?.items?.at(0)
 
-    return <footer className="bg-vulcan dark:bg-vulcan-85 text-white py-8 lg:py-16 outer-padding">
+    return <footer className="bg-black dark:bg-black text-white py-8 lg:py-16 outer-padding">
         <div className="container mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-6 xl:gap-8 w-full">
                 <section className="">
