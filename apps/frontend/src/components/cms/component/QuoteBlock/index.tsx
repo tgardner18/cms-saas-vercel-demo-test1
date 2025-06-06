@@ -38,11 +38,11 @@ const QuoteBlock: CmsComponent<QuoteBlockDataFragment> = ({
 
   return (
     <figure
-      className={`p-4 my-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-dark before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
+      className={`p-4 my-4 mx-4 lg:p-12 flex flex-col rounded-[40px] relative transition-all duration-300 before:content-[''] before:z-[-1] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-dark before:rounded-[40px] before:transition-all before:duration-300 before:ease-in-out ${additionalClasses.join(
         " "
       )}`}
     >
-      <CmsEditable as="blockquote" cmsFieldName="QuoteText" className="text-lg" ctx={ ctx }>
+      <CmsEditable as="blockquote" cmsFieldName="QuoteText" className="text-lg italic relative pl-6 before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:bg-white" ctx={ ctx }>
         {quote}
       </CmsEditable>
       <figcaption className="flex items-center mt-8">
